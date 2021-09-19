@@ -49,6 +49,8 @@
 \RequirePackage{soul}
 
 \RequirePackage{hyperref}
+\RequirePackage{bookmark}
+\bookmarksetup{open, numbered}
 
 \RequirePackage{tikz}
 
@@ -57,8 +59,19 @@
 \RequirePackage{amsthm}
 \RequirePackage{thmtools}
 \RequirePackage{tcolorbox}
+
+\makeatletter
+\newcommand*{\problembookmark}{%
+  \bookmark[dest=\@currentHref, rellevel=1, keeplevel]{%
+    Problem \csname the\thmt@envname\endcsname%
+  }%
+}
+\makeatother
+
 \declaretheoremstyle[bodyfont=\normalfont, spaceabove=0pt]{problem}
-\declaretheorem[style=problem]{problem}
+\declaretheorem[style=problem, postheadhook=\problembookmark]{problem}
+
+\tcbuselibrary{breakable}
 \tcbset{
   sharp corners,
   parbox=false,
@@ -93,5 +106,3 @@
   \frac{\pd\ifx\relax#1\relax\else^{#1}\fi{#2}}{\pd{#3}^{#1}}%
 }
 \renewcommand\vec\mathbfit
-
-%\DeclarePairedDelimiter
