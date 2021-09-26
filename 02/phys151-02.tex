@@ -1,0 +1,121 @@
+\documentclass{phys151}
+
+\title{Homework 2}
+\date{2021 September 27 (Monday)}
+\author{}
+
+\begin{document}
+
+\begin{problem}
+  \leavevmode
+  \begin{subproblems}
+  \item Find the Lorentz transformations of charge density \(\rho\) and current
+    density \(\vec j\).  (Use \(\mathcal O'\) moving with \(v\) along the
+    \(x\)-axis.)
+  \item Show that, under Lorentz transformations, total charge
+    \[
+      Q \equiv \int j^0(0, \vec x) \d V
+      = \int j^0(x) \delta(x^0) \d^4 x
+    \]
+    is invariant; that is \(Q = Q'\) where \(Q' = \int j^{0'}(x')
+    \delta(x^{0'}) \d^4 x\).
+  \end{subproblems}
+  \begin{hint}
+    Write  \(j^0(x) \delta(x^0) = j^\mu(x) \pd_\mu \theta(x^0)\), where
+    \(\theta\) is the Heaviside (step) function.
+
+    You will also need \({\Lambda^0}_0 \ge 1\).  Show that \(Q'-Q = 0\): first
+    show that  \(Q' = \int j^\mu \pd_\mu \theta(x^{0'}) \d^4 x\); then, look at
+    \(Q'-Q\) and show that it vanishes if \({\Lambda^0}_0 \ge 1\).
+  \end{hint}
+\end{problem}
+
+\begin{solution}
+  
+\end{solution}
+
+\begin{problem}
+  Define four-acceleration as \(a^\mu = \deriv {u^\mu} \tau\).
+  \begin{subproblems}
+    \item Show that \(a^\mu u_\mu = 0\).
+    \item Show that \(a^\mu a_\mu \ge 0\).
+    \item Show that
+      \[
+        a^\mu = \gamma^4 \paren* {
+          \frac {\vec v} c \cdot \vec a,
+          \vec a + \frac {\vec v} c 
+          \times \paren* {\frac {\vec v} c \times \vec a}
+        }
+      \]
+      in the lab frame.
+  \end{subproblems}
+  \begin{hint}
+    \leavevmode
+    \begin{subproblems}
+    \item Think of \(u^\nu u_\nu = -c^2\);
+    \item Consider the rest frame of the particle.
+    \item Use the identity
+      \(
+        \vec w_1 \times (\vec w_2 \times \vec w_3)
+        = (\vec w_1 \cdot \vec w_3) \vec w_2 
+        - (\vec w_1 \cdot \vec w_2) \vec w_3
+      \).
+    \end{subproblems}
+  \end{hint}
+\end{problem}
+
+\begin{solution}
+  
+\end{solution}
+
+\begin{problem}
+  Show that any solution to the equation
+  \[
+    (y^2 - a^2) F(y) = 0, \quad a > 0
+  \]
+  can be written as
+  \[
+    F(y) = f(y) \delta(y^2 - a^2)
+  \]
+  for some convenient function \(f(y)\).
+  \begin{hint}
+    Use the identities
+    \begin{align*}
+      f(x) \delta(x-a) &= f(a) \delta(x-a), \\
+      \delta(x^2-a^2) &= \frac 1 {2 \abs a}.
+    \end{align*}
+  \end{hint}
+\end{problem}
+
+\begin{solution}
+  
+\end{solution}
+
+\begin{problem}
+  Consider a spherically symmetric non-static four-current
+  \begin{align*}
+    j^0(t, \vec x) &= \rho(t, x), \\
+    \vec j(t, \vec x) &= \frac {\vec x} x j(t, x)
+  \end{align*}
+  with \(j^\mu(t, \vec x) = 0\) for \(x > R\) and all \(t\).
+
+  Show that the \(\vec E\) and \(\vec B\) in empty space for \(x>R\) is
+  \emph{static} and given by
+  \[
+    \vec E = Q \frac {\vec x} {x^3}, \qquad \vec B = 0
+  \]
+  where \(Q = \int \rho(t, x) \d V\).
+
+  \begin{hint}
+    The symmetry implies
+    \[
+      \vec E = \vec x f(t, x), \qquad \vec B = \vec x g(t, x).
+    \]
+  \end{hint}
+\end{problem}
+
+\begin{solution}
+  
+\end{solution}
+
+\end{document}

@@ -68,33 +68,63 @@
 }
 \makeatother
 
-\declaretheoremstyle[bodyfont=\normalfont, spaceabove=0pt]{problem}
+\declaretheoremstyle[bodyfont=\normalfont]{problem}
 \declaretheorem[style=problem, postheadhook=\problembookmark]{problem}
+\declaretheoremstyle[bodyfont=\normalfont, headfont=\scshape, bodyfont=\small]{hint}
+\declaretheorem[style=hint, numbered=no]{hint}
+
+
+\newlist{subproblems}{enumerate}{3}
+\setlist[subproblems, 1]{label=(\alph*)}
 
 \tcbuselibrary{breakable}
-\tcbset{
+\tcbsetforeverylayer{
+  no rules/.style={
+    toprule=0pt,
+    leftrule=0pt,
+    rightrule=0pt,
+    bottomrule=0pt,
+    opacityframe=0,
+  },
+  no padding/.style={
+    top=0pt,
+    bottom=0pt,
+    left=0pt,
+    right=0pt,
+  },
+  theorem/.style={
+    before upper=\vspace{-\parskip},
+  },
   sharp corners,
   parbox=false,
-  toprule=0pt,
-  leftrule=0pt,
-  rightrule=0pt,
-  bottomrule=0pt,
-  opacityframe=0,
   boxsep=0pt,
 }
 \tcolorboxenvironment{problem}{
+  theorem,
   colback=black,
   opacityback=1/16,
-  top=0pt,
+  top=1em/2,
   bottom=1em,
+  no rules,
+}
+\tcolorboxenvironment{hint}{
+  theorem,
+  standard jigsaw,
+  opacityback=0,
+  colframe=black,
+  opacityframe=1/8,
+  top=0em,
+  bottom=1em/2,
+  leftrule=1em/4,
+  toprule=0pt,
+  bottomrule=0pt,
+  rightrule=0pt,
 }
 \newtcolorbox{solution}{
   after=\newpage,
-  top=0pt,
-  bottom=0pt,
-  left=0pt,
-  right=0pt,
   opacityback=0,
+  no rules,
+  no padding,
 }
 
 \renewcommand\d{\operatorname d\!}
@@ -106,3 +136,6 @@
   \frac{\pd\ifx\relax#1\relax\else^{#1}\fi{#2}}{\pd{#3}^{#1}}%
 }
 \renewcommand\vec\mathbfit
+
+\DeclarePairedDelimiter\abs\lvert\rvert
+\DeclarePairedDelimiter\paren()
