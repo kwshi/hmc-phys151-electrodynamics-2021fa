@@ -98,6 +98,7 @@
   sharp corners,
   parbox=false,
   boxsep=0pt,
+  breakable,
 }
 \tcolorboxenvironment{problem}{
   theorem,
@@ -126,6 +127,18 @@
   no rules,
   no padding,
 }
+\newtcolorbox{aside}{
+  standard jigsaw,
+  opacityback=0,
+  colframe=black,
+  opacityframe=1/8,
+  top=0em,
+  bottom=1em/2,
+  leftrule=1em/4,
+  toprule=0pt,
+  bottomrule=0pt,
+  rightrule=0pt,
+}
 
 \renewcommand\d{\operatorname d\!}
 \newcommand\pd{\mathop{}\!\partial}
@@ -137,5 +150,7 @@
 }
 \renewcommand\vec\mathbfit
 
+\let\brack\relax
 \DeclarePairedDelimiter\abs\lvert\rvert
 \DeclarePairedDelimiter\paren()
+\DeclarePairedDelimiter\brack[]
