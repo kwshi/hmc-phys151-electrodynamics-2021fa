@@ -1,0 +1,90 @@
+\documentclass{phys151}
+
+\title{Homework 3}
+\date{2021 October 4 (Monday)}
+\author{}
+
+\begin{document}
+
+\begin{problem}
+  A particle of charge \(q\) and mass \(m\) is subjected to a \emph{constant}
+  and \emph{uniform} external electromagnetic field \(F_{\mu \nu}\).  Let
+  \(u^\mu(0)\) be the initial particle's 4-velocity at proper time \(\tau =
+  0\), with \(u^\mu u_\mu = -c^2\).
+  \begin{subproblems}
+  \item Show that
+    \[
+      u^\mu(\tau) = \paren* {e^{\tau \frac q {m c} F}}^\mu_\nu u^\nu(0).
+    \]
+    \begin{hint}
+      Expand the exponential of a matrix in Taylor series to find the action of
+      \(\deriv {} \tau\) on the exponential.
+    \end{hint}
+  \item \label{part:u-tau} Find \(u^\mu(\tau)\) for the case where
+    \[
+      \vec E = (E, 0, 0), \qquad \vec B = (B, 0, 0),
+    \]
+    which can always be arranged by a Lorentz transformation except if \(E =
+    B\) \emph{and} \(\vec E \perp \vec B\).
+    \begin{hint}
+      First show that the matrix in the exponent is block diagonal.  Then
+      expand in Taylor and combine the infinite series in sines, cosines,
+      \(\sinh\)s, and \(\cosh\)s.
+    \end{hint}
+  \item Set \(B = 0\) in \ref{part:u-tau}, let
+    \[
+      u^\mu(0) = \frac 1 {\sqrt {1 - v_0^2 / c^2}} (c, 0, v_0, 0).
+    \]
+    Find \(\vec x(t)\) by integrating your equations from \ref{part:u-tau}.
+    Show in particular that, if \(v_0 = 0\),
+    \begin{gather*}
+      x^1(t) = \sqrt {(ct)^2 + \frac {m^2 c^4} {q^2 E^2}}, \\
+      x^2(t) = x^3(t) = 0.
+    \end{gather*}
+    What is the maximum speed of the particle as \(t \to \infty\)?
+  \end{subproblems}
+\end{problem}
+
+\begin{solution}
+
+\end{solution}
+
+\begin{problem}
+  Use Green's theorem to show that the solution to \(\nabla^2 \phi = 4 \pi
+  \rho\) is \emph{unique} with fixed Dirichlet or Neumann boundary conditions.
+  Do this by assuming two different solutions \(\phi_1\) and \(\phi_2\), and
+  showing \(\phi_1 = \phi_2\) by solving \(\nabla^2 (\phi_1 - \phi_2) = 0\).
+  \begin{hint}
+    Set \(\varphi = \psi = \phi_1 - \phi_2\).
+  \end{hint}
+\end{problem}
+
+\begin{solution}
+
+\end{solution}
+
+\begin{problem}
+  Use Gauss' law to find the electric field inside and outside a sphere of
+  radius \(R\) and charge density \(\rho = \alpha r^n\) (with \(n > -3\)).
+  Write the answer in terms of the total charge \(Q\).
+\end{problem}
+
+\begin{solution}
+
+\end{solution}
+
+\begin{problem}
+  Calculate the capacitance of:
+  \begin{subproblems}
+  \item Two large plates of area \(A\) and separation \(d \ll \sqrt A\).
+  \item Two concentric spheres of radii \(a, b\) with \(b > a\).
+  \item Two concentric cylinders of length \(L\) and radii \(a, b\) with \(b >
+    a\).
+  \end{subproblems}
+\end{problem}
+
+\begin{solution}
+
+\end{solution}
+
+\end{document}
