@@ -1,0 +1,101 @@
+\documentclass{phys151}
+
+\title{Homework 4}
+\date{2021 October 11 (Monday)}
+\author{}
+
+\begin{document}
+
+\begin{problem}
+  Show that the value of \(\phi\) in vacuum at any point is equal to the
+  average of \(\phi\) over the surface of \emph{any} sphere centered at that
+  point.
+  \begin{hint}
+    Use Green's theorem with appropriate \(\varphi\) and \(\psi\).
+  \end{hint}
+\end{problem}
+
+\begin{solution}
+
+\end{solution}
+
+\begin{problem}
+  \leavevmode
+  \begin{subproblems}
+  \item Find \(\phi\) for a conducting sphere in a uniform electric field
+    \(E_0\) using the method of images.
+  \item Find the surface charge density on the sphere and show that the
+    \emph{total} charge is zero.
+  \end{subproblems}
+\end{problem}
+
+\begin{solution}
+
+\end{solution}
+
+\begin{problem}
+  Consider a hollow conducting \emph{grounded} sphere of radius \(b\) with a
+  concentric ring of charge inside it given by
+  \[
+    \rho(\vec x') = \frac Q {2 \pi a^2} \, \delta(r'-a) \, \delta(\cos \theta').
+  \]
+  Find \(\phi\) everywhere inside the sphere.
+  \begin{hint}
+    For this, you need the Dirichlet Green's function \(G_D\) for a region
+    bounded by two spheres of radii \(R_1\) and \(R_2\), where \(R_1 < R_2\):
+    \[
+      G_D(x, x') = 4 \pi \sum_{\ell=0}^\infty \sum_{m=-\ell}^\ell
+      \frac
+      {Y_{\ell m}^* (\theta', \varphi') Y_{\ell m} (\theta, \varphi)}
+      {(2\ell+r) \paren* {1 - \paren* {R_1/R_2}^{2\ell+1}}}
+      \paren* {r_<^\ell - \frac {R_1^{2\ell+1}} {r_<^{\ell+1}}}
+      \paren* {\frac 1 {r_>^{\ell+1}} - \frac {r_>^\ell} {R_2^{2\ell+1}}}.
+    \]
+    with \(R_1 \to 0\) and \(R_2 = b\).
+  \end{hint}
+  Verify the \(b \to \infty\) limit with the result from class.  You may leave
+  your answer in the form of an infinite sum.
+\end{problem}
+
+\begin{solution}
+
+\end{solution}
+
+\begin{problem}
+  Consider a hollow conducting grounded sphere of radius \(b\) with a uniform
+  line charge of total charge \(Q\) located on the \(z\)-axis between the north
+  and south poles.
+  \begin{subproblems}
+  \item Show that
+    \[
+      \rho(x') = \frac Q {2b} \frac 1 {2 \pi r'^2}
+      \paren* {\delta(\cos \theta' - 1) + \delta(\cos \theta' + 1)}.
+    \]
+  \item Find \(\phi\) everywhere inside the sphere.
+    \begin{hint}
+      For this, you need the Dirichlet Green's function \(G_D\) for a region
+      bounded by two spheres of radii \(a\) and \(b\), where \(a<b\):
+      \[
+        G_D(x, x') = 4 \pi \sum_{\ell=0}^\infty \sum_{m=-\ell}^\ell
+        \frac
+        {Y_{\ell m}^* (\theta', \varphi') Y_{\ell m} (\theta, \varphi)}
+        {(2\ell+r) \paren* {1 - (a/b)^{2\ell+1}}}
+        \paren* {r_<^\ell - \frac {a^{2\ell+1}} {r_<^{\ell+1}}}
+        \paren* {\frac 1 {r_>^{\ell+1}} - \frac {r_>^\ell} {b^{2\ell+1}}}.
+      \]
+      You will also need
+      \[
+        \deriv {} y \brack* {x^y} = x^y \ln x,
+        \qquad P_\ell(1) = 1,
+        \qquad P_\ell(-1) = (-1)^\ell.
+      \]
+    \end{hint}
+  \item Find the surface charge density on the sphere.
+  \end{subproblems}
+\end{problem}
+
+\begin{solution}
+
+\end{solution}
+
+\end{document}
