@@ -154,3 +154,4 @@
 \DeclarePairedDelimiter\abs\lvert\rvert
 \DeclarePairedDelimiter\paren()
 \DeclarePairedDelimiter\brack[]
+\renewcommand\i{\vec i}
