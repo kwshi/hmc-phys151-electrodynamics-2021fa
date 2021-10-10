@@ -155,3 +155,8 @@
 \DeclarePairedDelimiter\paren()
 \DeclarePairedDelimiter\brack[]
 \renewcommand\i{\vec i}
+
+\let\div\relax
+\DeclareMathOperator\lapl{\nabla^2}
+\DeclareMathOperator\grad{\vec\nabla}
+\DeclareMathOperator\ddelta{\mathnormal\delta}
