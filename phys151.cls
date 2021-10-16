@@ -47,6 +47,7 @@
 \RequirePackage{longtable}
 \RequirePackage{tabu}
 \RequirePackage{soul}
+\RequirePackage{wasysym}
 
 \RequirePackage{hyperref}
 \RequirePackage{bookmark}
@@ -72,7 +73,6 @@
 \declaretheorem[style=problem, postheadhook=\problembookmark]{problem}
 \declaretheoremstyle[bodyfont=\normalfont, headfont=\scshape, bodyfont=\small]{hint}
 \declaretheorem[style=hint, numbered=no]{hint}
-
 
 \newlist{subproblems}{enumerate}{3}
 \setlist[subproblems, 1]{label=(\alph*)}
@@ -140,7 +140,7 @@
   rightrule=0pt,
 }
 
-\renewcommand\d{\operatorname d\!}
+\renewcommand\d{\mathop{}\!\mathrm d}
 \newcommand\pd{\mathop{}\!\partial}
 \newcommand\deriv[3][]{%
   \frac{\d\ifx\relax#1\relax\else^{#1}\fi{#2}}{\d{#3}^{#1}}%
