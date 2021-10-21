@@ -1,0 +1,96 @@
+\documentclass{phys151}
+
+\title{Homework 5}
+\date{2021 October 21 (Thursday)}
+\author{}
+
+\begin{document}
+
+\begin{problem}
+  Consider the complex potential \(f(z)\) where \(f(z) = u(x) + \i v(z)\) with
+  \(u\) being the electric potential \(\phi\) in 2D.  Define \(f(z)\)
+  implicitly through
+  \[
+    x = u + e^{-v} \sin u, \qquad y = v - e^{-v} \cos u.
+  \]
+  \begin{subproblems}
+  \item Show that this function corresponds to a potential between two
+    semi-infinite parallel plates with potential \(\pm\pi\), with geometry
+    shown in the figure below.  For this, show that
+    \begin{subproblems}
+    \item \(\phi = \pm\pi\) at \(x = \pm\pi\) with \(y\ge1\);
+    \item The equipotentials far away from the edges are as expected.
+    \end{subproblems}
+  \item Show that the equipotential lines bend away as \(\frac x y = -\tan
+    u\) for \(v \to -\infty\); and for \(u = \frac \pi 2\), we have \(x =
+    \frac \pi 2 + e^{-y}\) at constant potential.  Sketch the equipotentials
+    qualitatively.
+  \end{subproblems}
+\end{problem}
+
+\begin{solution}
+
+\end{solution}
+
+\begin{problem}
+  Sketch the equipotentials for the following complex potentials:
+  \begin{subproblems}
+  \item \(\Omega(z) = (\alpha-\i\beta) z\) (uniform field)
+  \item \(\Omega(z) = \alpha \ln(z-c)\) (point @ \(z=c\))
+  \item \(\Omega(z) = \i\beta \ln(z-c)\) (vortex @ \(z=c\))
+  \item \(\Omega(z) = (\alpha+\i\beta) \ln(z-c)\)
+  \end{subproblems}
+  (\(\alpha, \beta\) are real, \(c\) is complex.)
+\end{problem}
+
+\begin{solution}
+
+\end{solution}
+
+\begin{problem}
+  Consider the two circles
+  \begin{align*}
+    \Gamma_1 &\colon \abs z = 1, \\
+    \Gamma_2 &\colon \abs{z-1} = \frac 5 2.
+  \end{align*}
+  We want to solve \(\lapl\phi = 0\) in the region between the two circles with
+  \(\phi=a\) on \(\Gamma_1\) and \(\phi=b\) on \(\Gamma_2\), where \(a\) and
+  \(b\) are constants.
+  \begin{subproblems}
+  \item Applying the map \(\zeta = \frac {z+1/4} {z+4}\), show that
+    \(\Gamma_1\) and \(\Gamma_2\) are mapped to concentric circles.
+  \item Show that the complex potential is
+    \[
+      \chi(\zeta) = 2b-a + \frac {b-a} {\ln 2} \ln \zeta.
+    \]
+  \item Find \(\phi\).
+  \end{subproblems}
+\end{problem}
+
+\begin{solution}
+
+\end{solution}
+
+\begin{problem}
+  Consider the region bounded by
+  \begin{align*}
+    \Gamma_1 &\colon \abs z = 1, & \Im z &\ge 0, \\
+    \Gamma_2 &\colon \abs z = 1, & \Im z &\le 0.
+  \end{align*}
+  Solve \(\lapl\phi=0\) with \(\phi=a\) on \(\Gamma_1\) and \(\phi=a+k\) on
+  \(\Gamma_2\).  Do this by using the conformal map
+  \[
+    w = \frac {z-1}{z+1}
+  \]
+  and the transformation
+  \[
+    \zeta = \ln w - \i \frac \pi 2.
+  \]
+  The solution in the \(\zeta\) plane should be very easy.
+\end{problem}
+
+\begin{solution}
+
+\end{solution}
+
+\end{document}
