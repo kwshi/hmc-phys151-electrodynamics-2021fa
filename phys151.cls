@@ -4,6 +4,7 @@
 
 \LoadClass{extarticle}
 
+\RequirePackage{mathtools}
 \RequirePackage{microtype}
 \RequirePackage{libertinus}
 \renewcommand\familydefault\sfdefault
@@ -35,8 +36,6 @@
 \pagestyle{phys151}
 
 \RequirePackage[table]{xcolor}
-
-\RequirePackage{mathtools}
 
 \RequirePackage{parskip}
 \RequirePackage{multicol}
