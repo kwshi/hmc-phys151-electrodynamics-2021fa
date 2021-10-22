@@ -54,6 +54,8 @@
 \bookmarksetup{open, numbered}
 
 \RequirePackage{tikz}
+\usetikzlibrary{arrows.meta}
+\usetikzlibrary{positioning}
 
 \RequirePackage{mdframed}
 
