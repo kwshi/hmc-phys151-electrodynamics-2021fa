@@ -51,6 +51,14 @@
 \RequirePackage{hyperref}
 \RequirePackage{bookmark}
 \bookmarksetup{open, numbered}
+\hypersetup{
+  pdfborder={0 0 1},
+  bookmarks=true,
+  unicode=true,
+  colorlinks=true,
+  urlcolor=blue!25!teal,
+  linkcolor=green!50!brown!50!black,
+}
 
 \RequirePackage{tikz}
 
