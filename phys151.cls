@@ -37,6 +37,8 @@
 
 \RequirePackage[table]{xcolor}
 
+\RequirePackage{extarrows}
+\RequirePackage{cancel}
 \RequirePackage{parskip}
 \RequirePackage{multicol}
 \RequirePackage{enumitem}
