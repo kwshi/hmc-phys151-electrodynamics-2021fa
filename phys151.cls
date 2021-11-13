@@ -65,6 +65,7 @@
 \RequirePackage{tikz}
 \usetikzlibrary{arrows.meta}
 \usetikzlibrary{positioning}
+\usetikzlibrary{angles}
 
 \RequirePackage{mdframed}
 
