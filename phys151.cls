@@ -159,6 +159,7 @@
   \frac{\pd\ifx\relax#1\relax\else^{#1}\fi{#2}}{\pd{#3}^{#1}}%
 }
 \renewcommand\vec\mathbfit
+\newcommand\uvec[1]{\mathop{}\!\hat{\vec{#1}}}
 
 \let\brack\relax
 \DeclarePairedDelimiter\abs\lvert\rvert
