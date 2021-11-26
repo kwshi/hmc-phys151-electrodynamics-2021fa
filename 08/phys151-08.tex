@@ -1,0 +1,87 @@
+\documentclass{phys151}
+
+\title{Homework 8}
+\date{2021 November 15 (Monday)}
+\author{Kye Shi}
+
+\begin{document}
+
+\begin{problem}
+  Derive a relationship with the magnetic moment \(\vec m\) and the angular
+  momentum of a charged particle moving in a circle.
+\end{problem}
+
+\begin{solution}
+
+\end{solution}
+
+\begin{problem}
+  Consider two parallel magnetic dipoles \(\vec m\) as shown below.
+  \begin{center}
+    \begin{tikzpicture}
+      \tikzset{
+        vec/.style={very thick, arrows=-Stealth},
+      }
+
+      \draw[opacity=1/2] (0,0) coordinate(a) -- (30:1.5in) coordinate(b)
+      node[midway, below] {\(R\)};
+      \draw[vec] (a) -- +(0,3em) node[left, midway]{\(\vec m\)};
+      \draw[vec] (b) -- +(0,3em) coordinate (b') node[right, midway]{\(\vec m\)};
+
+      \draw pic[draw, opacity=1/2, pic text=\(\theta\), angle eccentricity=3/2]{angle=b'--b--a};
+    \end{tikzpicture}
+  \end{center}
+  Find the force and torque on either due to the other.
+\end{problem}
+
+\begin{solution}
+
+\end{solution}
+
+\begin{problem}
+  Prove that, in a process of hysteresis where we vary \(-\vec B_0 \to +\vec
+  B_0 \to -\vec B_0\), the energy loss is proportional to the area of the
+  hysteresis loop on an \(\vec H\)--\(\vec B\) diagram.
+\end{problem}
+
+\begin{solution}
+
+\end{solution}
+
+\begin{problem}
+  Consider a sphere of radius \(R\) with uniform \emph{permanent} magnetization
+  \(M_0\).
+  \begin{subproblems}
+    \item For \(r>R\), using \(\grad\times\vec H=0\), introduce a ``potential''
+      \(\phi_M\) by \(\vec H=-\grad\phi_M\).  Show that
+      \[
+        \lapl \phi_M = 4\pi \grad\cdot\vec M \equiv -4\pi\rho_m.
+      \]
+    \item Show that
+      \[
+        \phi_M
+        = -\int \frac{\grad' \cdot \vec M(\vec x')} {\abs{\vec x-\vec x'}} \d V'
+        + \int \frac {\vec M(\vec x') \cdot \hat{\vec x}'} {\abs{\vec x-\vec x'}} \d A'.
+      \]
+    \item Find \(\vec H\) everywhere.
+  \end{subproblems}
+\end{problem}
+
+\begin{solution}
+
+\end{solution}
+
+\begin{problem}
+  Consider the previous problem but now the magnetization is induced by an
+  external uniform field \(\vec B_0\).  The permeability of the sphere is
+  \(\mu\).  Find the magnetization \(\vec M\) of the sphere.
+  \begin{hint}
+    You need very little extra effort given the previous problem's solution.
+  \end{hint}
+\end{problem}
+
+\begin{solution}
+
+\end{solution}
+
+\end{document}

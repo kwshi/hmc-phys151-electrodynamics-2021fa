@@ -37,6 +37,8 @@
 
 \RequirePackage[table]{xcolor}
 
+\RequirePackage{extarrows}
+\RequirePackage{cancel}
 \RequirePackage{parskip}
 \RequirePackage{multicol}
 \RequirePackage{enumitem}
@@ -63,6 +65,7 @@
 \RequirePackage{tikz}
 \usetikzlibrary{arrows.meta}
 \usetikzlibrary{positioning}
+\usetikzlibrary{angles}
 
 \RequirePackage{mdframed}
 
@@ -84,8 +87,8 @@
 \declaretheorem[style=hint, numbered=no]{hint}
 
 \newlist{subproblems}{enumerate}{3}
-\setlist[subproblems, 1]{label=(\alph*)}
-\setlist[subproblems, 2]{label=(\roman*)}
+\setlist[subproblems, 1]{label=(\alph*), ref=(\arabic{problem}.\alph*)}
+\setlist[subproblems, 2]{label=(\roman*), ref=(\arabic{problem}.\alph{subproblemsi}.\roman*)}
 
 \tcbuselibrary{breakable}
 \tcbsetforeverylayer{
@@ -105,6 +108,18 @@
   theorem/.style={
     before upper=\vspace{-\parskip},
   },
+  aside/.style={
+    standard jigsaw,
+    opacityback=0,
+    colframe=black,
+    opacityframe=1/8,
+    top=0em,
+    bottom=1em/2,
+    leftrule=1em/4,
+    toprule=0pt,
+    bottomrule=0pt,
+    rightrule=0pt,
+  },
   sharp corners,
   parbox=false,
   boxsep=0pt,
@@ -118,36 +133,23 @@
   bottom=1em,
   no rules,
 }
-\tcolorboxenvironment{hint}{
-  theorem,
-  standard jigsaw,
-  opacityback=0,
-  colframe=black,
-  opacityframe=1/8,
-  top=0em,
-  bottom=1em/2,
-  leftrule=1em/4,
-  toprule=0pt,
-  bottomrule=0pt,
-  rightrule=0pt,
-}
+\newtcolorbox{aside}{aside}
+\tcolorboxenvironment{hint}{aside}
 \newtcolorbox{solution}{
   after=\newpage,
   opacityback=0,
   no rules,
   no padding,
 }
-\newtcolorbox{aside}{
+\newtcolorbox{highlight}{
   standard jigsaw,
+  toprule=1pt/2,
+  bottomrule=1pt/2,
+  leftrule=1pt/2,
+  rightrule=1pt/2,
   opacityback=0,
+  opacityframe=1/2,
   colframe=black,
-  opacityframe=1/8,
-  top=0em,
-  bottom=1em/2,
-  leftrule=1em/4,
-  toprule=0pt,
-  bottomrule=0pt,
-  rightrule=0pt,
 }
 
 \renewcommand\d{\mathop{}\!\mathrm d}
