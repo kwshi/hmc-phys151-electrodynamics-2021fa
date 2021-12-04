@@ -85,6 +85,7 @@
 \declaretheorem[style=problem, postheadhook=\problembookmark]{problem}
 \declaretheoremstyle[bodyfont=\normalfont, headfont=\scshape, bodyfont=\small]{hint}
 \declaretheorem[style=hint, numbered=no]{hint}
+\declaretheorem[style=hint, numbered=no]{note}
 
 \newlist{subproblems}{enumerate}{3}
 \setlist[subproblems, 1]{label=(\alph*), ref=(\arabic{problem}.\alph*)}
@@ -167,6 +168,7 @@
 \DeclarePairedDelimiter\abs\lvert\rvert
 \DeclarePairedDelimiter\paren()
 \DeclarePairedDelimiter\brack[]
+\DeclarePairedDelimiter\abrack\langle\rangle
 \renewcommand\i{\vec i}
 
 \let\div\relax

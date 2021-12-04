@@ -1,0 +1,90 @@
+\documentclass{phys151}
+
+\title{Homework 10}
+\author{}
+\date{2021 December 2 (Thursday)}
+
+\begin{document}
+  
+\begin{problem}
+  Analyze the problem of EM waves falling onto a dielectric (\(\epsilon, \mu,
+  \sigma\)) at normal incidence.  The wave of frequency \(\omega\) and
+  amplitude \(\vec E_0\) is coming from a region of vacuum.  We want the ratios
+  of reflection amplitude to incidence amplitude.
+\end{problem}
+
+\begin{solution}
+  
+\end{solution}
+
+\begin{problem}
+  For the scenario of total reflection, show that \(\abrack{\vec S \cdot \uvec
+  n} = 0\) so that there is no energy flow into the material.
+
+  \begin{note}
+    \(\abrack\cdot\) means time average.
+  \end{note}
+\end{problem}
+
+\begin{solution}
+  
+\end{solution}
+
+\begin{problem}
+  A plane wave is incident on a layered interface as shown:
+  \begin{center}
+    \begin{tikzpicture}
+      \tikzset{vec/.style={very thick, -Stealth}}
+      \matrix[column sep=6em] {
+        \draw[vec] (0,0) -- (4em,0) node[right]{\(\vec K\)};
+        \draw[vec] (0,0) -- (0,4em) node[above]{\(\vec E_i\)};
+        \draw[vec] (0,0) -- (-2em,-2em) node[below left]{\(\vec B_i\)};
+        &
+        \fill[opacity=1/4] (-1em,4em) rectangle (1em,-4em);
+        \draw (-1em,4em) -- ++(0,-8em) (1em,4em) -- ++(0,-8em);
+        \node at (-2em,0) {\(n_1\)};
+        \node at (0,0) {\(n_2\)};
+        \node at (2em,0) {\(n_3\)};
+        \\
+      };
+    \end{tikzpicture}
+  \end{center}
+
+  Calculate the transmission and reflection for
+  \begin{subproblems}
+    \item \(n_1=1, n_2=2, n_3=3\).
+    \item \(n_1=3, n_2=2, n_3=1\).
+    \item \(n_1=2, n_2=4, n_3=1\).
+  \end{subproblems}
+\end{problem}
+
+\begin{solution}
+  
+\end{solution}
+
+\begin{problem}
+  A simple model of propagation of radio waves in the earth's atmosphere
+  consists of a flat earth (!) at \(z=0\) and a nonuniform medium with
+  \(\epsilon=\epsilon(z)\) for \(z>0\).  Consider Maxwell's equations under the
+  assumption that the fields are independent of \(y\) and can be written as
+  functions of \(z\) times \(e^{i(kx-\omega t)}\).
+
+  Show that the wave equation for \(z>0\) is
+  \[
+    \deriv[2] F z + q^2(z) \, F = 0,
+  \]
+  where
+  \begin{itemize}
+    \item \(q^2(z) = \omega^2 \, \epsilon(z) - k^2\) and \(F=Ey\) for
+      horizontal polarization, and
+    \item \(q^2(z) = \omega^2 \, \epsilon(z) + \frac 1 {2\epsilon} \deriv[2]
+      \epsilon z - \frac 3 {4\epsilon^2} \paren*{\deriv \epsilon z}^2 - K^2\)
+      with \(F = \sqrt\epsilon E z\) for vertical polarization.
+  \end{itemize}
+\end{problem}
+
+\begin{solution}
+  
+\end{solution}
+
+\end{document}
